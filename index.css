@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1e1f21;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    background: #2a2b2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+.nav-links a:hover {
+    opacity: 1;
+    color: blue;
+}
+
+/* MAIN LAYOUT */
+.hero-section {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* LEFT IMAGE */
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* RIGHT CONTENT */
+.hero-text {
+    width: 50%;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.hero-text h1 span {
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.play-video {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* PAGE NUMBER */
+.page-number {
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+    }
+    .hero-image,
+    .hero-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 22px;
+    }
+}
